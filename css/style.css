@@ -640,11 +640,11 @@ select.list-dt:focus {
 
 
 .small-txt {
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 .txt-blue{
-    color:#1076ff ;
+    color:#1076ff  !important;
 }
 
 .select-services-cards{
