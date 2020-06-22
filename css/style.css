@@ -638,6 +638,15 @@ select.list-dt:focus {
 
 /*select-services-card*/
 
+
+.small-txt {
+    font-size: 14px;
+}
+
+.txt-blue{
+    color:#1076ff ;
+}
+
 .select-services-cards{
 
   background: #FFFFFF;
