@@ -496,6 +496,9 @@ color: #fff;
     margin: 10px 5px
 }
 
+.previous{
+    background-color: #cccccc !important;
+}
 #msform .action-button-previous:hover,
 #msform .action-button-previous:focus {
     box-shadow: 0 0 0 2px white, 0 0 0 3px #616161
