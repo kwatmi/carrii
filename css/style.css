@@ -538,7 +538,7 @@ color: #fff;
     margin: 10px 5px
 }
 
-.previous{
+.previous-btn{
     background-color: #cccccc !important;
 }
 #msform .action-button-previous:hover,
@@ -704,14 +704,17 @@ select.list-dt:focus {
 border: 1px solid rgba(228, 228, 228, 0.6);
 /* Card Shadows/Card - 16dp - Shadow */
 
-box-shadow: 0px 24px 32px rgba(50, 50, 71, 0.08), 0px 16px 16px rgba(50, 50, 71, 0.08);
+box-shadow: 0px 24px 32px rgba(52, 52, 61, 0), 0px 16px 16px rgba(50, 50, 71, 0.08);
 border-radius: 8px;
+
+cursor: pointer;
 }
 
 .no-prefrence-cards{
 
 
-    background-color:  #2884FF;;
+    background-color:  #2884FF;
+    cursor: pointer;
 }
 
 .time-and-gender{
