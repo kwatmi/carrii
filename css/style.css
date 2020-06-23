@@ -326,9 +326,19 @@ color: #fff;
 }
 .users-feedback-image{
 	width: 43px;
-	height: 43px;
+    
+    height: 43px;
 }
 
+
+/* progressbar */
+#progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    width: 33.33%;
+    float: left;
+    position: relative
+}
 	
 		
 	}
@@ -394,7 +404,39 @@ color: #fff;
 }
 
 
+
+/* progressbar */
+
+/* progressbar */
+#progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    width: 33.33%;
+    float: left;
+    position: relative
 }
+
+
+}
+
+
+
+@media (min-width: 992px) { 
+
+
+    /* progressbar */
+#progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    width: 25%;
+    float: left;
+    position: relative
+}
+
+
+
+
+ }
 
 
 
@@ -550,7 +592,7 @@ select.list-dt:focus {
 #progressbar li {
     list-style-type: none;
     font-size: 12px;
-    width: 25%;
+    /* width: 25%; */
     float: left;
     position: relative
 }

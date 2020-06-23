@@ -124,4 +124,9 @@ return false;
 // calendar onclick
 
 
+    // $('#exampleModal').modal('hide');
+   
+    
+
+
 
