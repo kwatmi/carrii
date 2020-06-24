@@ -15,53 +15,35 @@
 <body>
 <!-- form -->
 <!-- MultiStep Form -->
-<div class="container-fluid" >
-    <div class="row justify-content-center mt-0">
-        <div class="col-12 col-sm-12 col-md-11 col-lg-11 text-center p-0 mt-3 mb-2">
-            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                <h2><strong>Book an appointment </strong></h2>
-                <p>Fill all the neccessary field </p>
-                
-                
-            </div>
-        </div>
-    </div>
-   
-</div>
+
 <div class="container">
     <div class="row">
         <div class="col-12 mx-0">
             <form id="msform">
                 <!-- progressbar -->
-                <ul id="progressbar" class="mx-0 px-0">
+                <ul id="progressbar" class="mx-0 px-0 pt-5">
                     <li class="active d-none d-lg-block" id="services"><strong>Services</strong></li>
-                    <li id="prefrence" class="active" ><strong>Staff prefrence</strong></li>
-                    <li id="selecttime"  class="active"><strong>Select time</strong></li>
-                    <li id="confirm" class=""><strong>Confirm</strong></li> 
+                    <li id="prefrence" class="active"><strong>Staff prefrence</strong></li>
+                    <li id="selecttime" class="active"><strong>Select time</strong></li>
+                    <li id="confirm" class=" active"><strong>Confirm</strong></li> 
                 </ul> 
-                <!-- fieldsets -->
-               
-                <!-- third form step -->
+
+                <!-- confirm booking step -->
                 <fieldset>
-                    <div class="form-card">
-                        <h2 class="fs-title"> booking calender here</h2>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 ">
-                                    <div id="caleandar"></div>
+                    <div class="container-fluid" >
+                        <div class="row justify-content-center mt-0">
+                            <div class="col-12 col-sm-12 col-md-11 col-lg-11 text-center p-0 mt-3 mb-2">
+                                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                                    <h2><strong>Booking successful </strong></h2>
+                                    <p>You will recieve a mail soon</p>
+                                    
+                                    
                                 </div>
                             </div>
                         </div>
-                    </div> 
-                    <!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> 
-                    <input type="button" name="make_payment" class="next action-button" value="Confirm" /> -->
-
-                    <input type="button" name="previous" class="previous-btn hero-butoon action-button  mt-3  py-2 px-4" value="Previous" onclick="location.href = 'prefrence.html'"  />
-                    <!-- <input type="button" name="next" class="next action-button" value="Next Step" /> -->
-                    <!-- <input type="button" name="next" class="next hero-butoon action-button  mt-3  py-2 px-4" value="Book Now" /> -->
+                       
+                    </div>
                 </fieldset>
-
-                <!-- confirm booking step -->
             </form>
         </div>
 
@@ -99,19 +81,19 @@
                     </div>
                     <div class="col-12 col-md-12">
                         
-                         <h5  class="border-bottom py-3  avaialbletime " >
+                         <h5  class="border-bottom py-3  " >
                              10:15am 
                           </h5 >
-                          <h5  class="border-bottom py-3 avaialbletime">
+                          <h5  class="border-bottom py-3">
                              11:00am 
                           </h5 >
-                          <h5  class="border-bottom py-3 avaialbletime">
+                          <h5  class="border-bottom py-3">
                             12:00pm 
                          </h5 >
-                         <h5 class="border-bottom py-3 avaialbletime">
+                         <h5 class="border-bottom py-3">
                             1:00pm 
                          </h5 >
-                         <h5 class="border-bottom py-3 avaialbletime">
+                         <h5 class="border-bottom py-3">
                             2:15pm 
                          </h5 >
 
@@ -134,7 +116,7 @@
 
 
     <section class="getapp-section">
-        <div class="container-fluid mt-3 mt-lg-5  ">
+        <div class="container-fluid mt-3 mt-lg-5 footer ">
             <div class="row">
                 <div class="col-md-12 py-3"> 
                     <p class="mb-0 text-right "> © 2020. CARRII.</p>
@@ -199,13 +181,6 @@ $('#exampleModal').modal('show')
     $('#exampleModal').modal('show')
     
     });
-    </script>
-
-    <script>
-        $(".avaialbletime").on('click', function() {
-     window.location = "success.html";
-
-});
     </script>
 
 </body>

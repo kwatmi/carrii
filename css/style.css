@@ -748,7 +748,19 @@ cursor: pointer;
 
 /* calendar  */
 
-.cld-day{
+.cld-day, .avaialbletime{
 
     cursor:pointer;
 }
+
+
+/* footer */
+
+.footer {
+    position: fixed;
+    bottom: 0px; 
+
+    background-color: #CFE4FF; 
+    /* width: 100%; */
+    /* height: 2.5rem;            Footer height */
+  }
