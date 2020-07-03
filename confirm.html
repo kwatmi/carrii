@@ -129,7 +129,7 @@
             margin: 0px 10px;
             align-items: center;
             vertical-align: middle;
-            
+
         }
 
         .desc-count {
@@ -268,10 +268,13 @@
 
                 <div class="description">
                     <div class="desc-header">
-                        <p> <i class="icon"><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.00042 2.83015V6.25872L9.28613 7.40158M12.7147 6.25872C12.7147 9.41463 10.1563 11.973 7.00042 11.973C3.84451 11.973 1.28613 9.41463 1.28613 6.25872C1.28613 3.10281 3.84451 0.544434 7.00042 0.544434C10.1563 0.544434 12.7147 3.10281 12.7147 6.25872Z" stroke="#E7F1FF" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </i>  DATE AND TIME <span>May 13, 2016 5:08 PM </span></p>
+                        <p> <i class="icon"><svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.00042 2.83015V6.25872L9.28613 7.40158M12.7147 6.25872C12.7147 9.41463 10.1563 11.973 7.00042 11.973C3.84451 11.973 1.28613 9.41463 1.28613 6.25872C1.28613 3.10281 3.84451 0.544434 7.00042 0.544434C10.1563 0.544434 12.7147 3.10281 12.7147 6.25872Z"
+                                        stroke="#E7F1FF" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </i> DATE AND TIME <span>May 13, 2016 5:08 PM </span></p>
                     </div>
 
                     <p class="desc-count">3 SERVICES</p>
@@ -280,15 +283,15 @@
                         <tbody>
                             <tr>
                                 <td>Nail Treatment</td>
-                                <td id="price">$200</td>
+                                <td id="price-1">$200</td>
                             </tr>
                             <tr>
                                 <td>Nail Treatment</td>
-                                <td id="price">$500</td>
+                                <td id="price-2">$500</td>
                             </tr>
                             <tr>
                                 <td>Nail Treatment</td>
-                                <td id="price">$200</td>
+                                <td id="price-3">$200</td>
                             </tr>
                         </tbody>
                     </table>
@@ -296,7 +299,7 @@
                     <div class="total">
                         <span>Total Service Price</span>
                         <br>
-                        <b>$80.58</b>
+                        <b id="total"></b>
                     </div>
 
                 </div>
@@ -304,9 +307,11 @@
                 <div class="add-form">
                     <div class="add-form-header">
                         <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 3.50879H16L22 8.77195V15.7895C22 16.7544 21.1 17.5439 20 17.5439H4C2.9 17.5439 2 16.7632 2 15.7983V5.26317C2 4.29826 2.9 3.50879 4 3.50879ZM4.00013 5.2631V15.7982H20.0001V9.64906H15.0001V5.2631H4.00013Z" fill="#F0F4F8"/>
-                            </svg>
-                             &nbsp; Add booking note
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4 3.50879H16L22 8.77195V15.7895C22 16.7544 21.1 17.5439 20 17.5439H4C2.9 17.5439 2 16.7632 2 15.7983V5.26317C2 4.29826 2.9 3.50879 4 3.50879ZM4.00013 5.2631V15.7982H20.0001V9.64906H15.0001V5.2631H4.00013Z"
+                                fill="#F0F4F8" />
+                        </svg>
+                        &nbsp; Add booking note
                     </div>
                     <textarea name="add-form-text" id="" cols="60" rows="7">
                         Some booking notes if any
@@ -346,20 +351,25 @@
 
 
     <script>
+        var totalArr = []
         $(document).ready(function () {
-            let price = $('[id^="price"]');
+            $('[id^="price"]').each(function (index, el) {
+                var text = $(this).text();
 
+                totalArr.push(parseInt(text.substr(1)));
 
-            price.map((i, x) => {
-
-                console.log(x);
 
             })
+            // console.log(totalArr);
 
+            var sum = totalArr.reduce(function (a, b) {
+                return a + b;
+            }, 0);
 
+            $("#total").text(`$${sum}`);
 
-
-            console.log(price)
+            
+            
         });
     </script>
 
