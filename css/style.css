@@ -82,7 +82,7 @@ efnwofnono//
 
 
 
-.card img {
+.card .image {
     /* position: relative; */
     border-radius: 20px;
 }
@@ -99,12 +99,8 @@ efnwofnono//
     transition: all 0.5s ease-in-out;
 }
 
-.card:hover .overlay {
-    clip-path: none;
-    /* padding: 100px; */
-}
 
-.card h3 {
+.card .image-desc {
     z-index: 1000;
     font-size: 32px;
     position: absolute;
@@ -625,7 +621,7 @@ efnwofnono//
         border-radius: 20px;
     }
 
-    .card h3{
+    .card .image-desc{
 
         font-size: 36px !important;
    

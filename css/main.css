@@ -4864,6 +4864,9 @@ input[type="button"].btn-block {
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
 
+.card-deck  {
+  width: 100%.;
+}
 .card-deck .card {
   margin-bottom: 15px;
 }

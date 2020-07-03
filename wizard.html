@@ -156,6 +156,18 @@
             transition: all 0.5s ease-in-out;
 
         }
+
+        .active-selected {
+            background: #4091FF !important;
+            color: #fff !important;
+        }
+
+        #preference {
+            font-size: 12px;
+            color: #4091FF;
+            float: left;
+            margin-left: 46px;
+        }
     </style>
 
 
@@ -683,12 +695,11 @@
 
             </fieldset>
             <fieldset>
-                <div class="container-fluid">
+                <div class="container" style="padding-bottom: 50px;">
                     <div class="row text-left">
-                        <!--  -->
+
                         <div class="card-deck col-12 my-0 my-lg-4 ">
-                            <div class="card my-3 my-lg-0 border-0 no-prefrence-cards "
-                                >
+                            <div class="card my-3 my-lg-0 border-0 no-prefrence-cards ">
                                 <div class="row no-gutters my-auto py-4">
                                     <div class=" col-5 col-md-6 py-lg-2 px-lg-2 py-0 px-2">
                                         <div class="no-prefrence-img">
@@ -708,8 +719,50 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card my-3 my-lg-0 border-0 select-services-cards "
-                                >
+                            <div class="card my-3 my-lg-0 border-0 select-services-cards " id="select-service-card001"
+                                data-item="Emma Isabella">
+                                <div class="row no-gutters">
+                                    <div class=" col-5 col-md-6">
+                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                            <div class="p-lg-3">
+                                                <h3 class="salon-service-name">Emma <br>
+                                                    Isabella.</h3>
+                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
+                                                <p class="mt-lg-3"><small class=""> makeup artise</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7 col-md-6">
+                                        <img src="images/staff2.jpg" class="card-img media-img-fluid" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-deck col-12 my-0 my-lg-4">
+
+                            <div class="card my-3 my-lg-0 border-0 select-services-cards" id="select-service-card002"
+                                data-item="Emma Isabella">
+                                <div class="row no-gutters">
+                                    <div class=" col-5 col-md-6">
+                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                            <div class="p-lg-3">
+                                                <h3 class="salon-service-name">Emma <br>
+                                                    Isabella.</h3>
+                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
+                                                <p class="mt-lg-3"><small class=""> makeup artise</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7 col-md-6">
+                                        <img src="images/staff2.jpg" class="card-img media-img-fluid" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card my-3 my-lg-0 border-0 select-services-cards" id="select-service-card003"
+                                data-item="Emma Isabella">
                                 <div class="row no-gutters">
                                     <div class=" col-5 col-md-6">
                                         <div class="py-lg-2 px-lg-2 py-0 px-2">
@@ -729,48 +782,6 @@
                             </div>
                         </div>
 
-                        <!--  -->
-                        <div class="card-deck col-12 my-0 my-lg-4 ">
-                            <div class="card my-3 my-lg-0 border-0 select-services-cards "
-                                >
-                                <div class="row no-gutters">
-                                    <div class=" col-5 col-md-6">
-                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                            <!-- <h5 class="card-title">Card title</h5> -->
-                                            <div class="p-lg-3">
-                                                <h3 class="salon-service-name">Emma <br>
-                                                    Isabella.</h3>
-                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                <p class="mt-lg-3"><small class=""> makeup artise</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-7 col-md-6">
-                                        <img src="images/staff2.jpg" class="card-img media-img-fluid" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card my-3 my-lg-0 select-services-cards next"
-                                >
-                                <div class="row no-gutters">
-                                    <div class=" col-5 col-md-6">
-                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                            <!-- <h5 class="card-title">Card title</h5> -->
-                                            <div class="p-lg-3">
-                                                <h3 class="salon-service-name">Emma <br>
-                                                    Isabella.</h3>
-                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                <p class="mt-lg-3"><small class=""> makeup artise</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-7 col-md-6">
-                                        <img src="images/staff2.jpg" class="card-img media-img-fluid" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
@@ -796,10 +807,10 @@
 
                     <div class="colmuns">
                         <div class="card px-2">
-                            <h3>Tasha hair and <br> Beauty Salon</h3>
+                            <h3 class="image-desc">Tasha hair and <br> Beauty Salon</h3>
                             <div class="overlay"></div>
-                            <img class="img-responsive img-rounded w-75" src="./images/v324_198.png" alt="tasha hair"
-                                width="100%">
+                            <img class="img-responsive img-rounded w-75 image" src="./images/v324_198.png"
+                                alt="tasha hair" width="100%">
                         </div>
 
                     </div>
@@ -826,8 +837,8 @@
                                     </i> DATE AND TIME <span>May 13, 2016 5:08 PM </span></p>
                             </div>
 
-                            <p class="desc-count mx-5">3 SERVICES</p>
-
+                            <p class="desc-count mx-5" id="selectedServices"> </p>
+                            <span id="preference"></span>
                             <table class="desc-table">
                                 <tbody id="table-body">
 
@@ -865,6 +876,61 @@
             </fieldset>
         </form>
 
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="exampleModalLabel"><small>select time</small></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card my-3 my-lg-0 border-0 no-prefrence-cards ">
+                            <div class="row no-gutters my-auto py-4">
+
+                                <div class="col-12 col-md-12 text-center">
+                                    <p>
+                                        <span class="text-white"> MON</span>
+                                    </p>
+                                    <h3 class="text-white"> 18th</h3>
+                                    <p>
+                                        <span class="text-white"> MAY</span>
+                                    </p>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12">
+
+                            <h5 class="border-bottom py-3  avaialbletime ">
+                                10:15am
+                            </h5>
+                            <h5 class="border-bottom py-3 avaialbletime">
+                                11:00am
+                            </h5>
+                            <h5 class="border-bottom py-3 avaialbletime">
+                                12:00pm
+                            </h5>
+                            <h5 class="border-bottom py-3 avaialbletime">
+                                1:00pm
+                            </h5>
+                            <h5 class="border-bottom py-3 avaialbletime">
+                                2:15pm
+                            </h5>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
@@ -882,6 +948,24 @@
         $(document).ready(function () {
             var trace = [];
             var data = [];
+            var selected_staff = '';
+            $('[id^="select-service-card"]').click(function () {
+
+
+                $(this).toggleClass('active-selected');
+                selected_staff = $(this).attr('data-item');
+
+                if (selected_staff) {
+                    $('#preference').text(`Selected Staff: ${selected_staff}`)
+                } else {
+                    $('#preference').text(`No Preference Selected`)
+                }
+
+
+            })
+
+
+
             $('[id^="checkbox"]').click(function () {
                 let id = $(this).attr('id');
 
@@ -895,7 +979,6 @@
                     let findIt = data.find((x) => {
                         x.id === id
                     });
-                    console.log(findIt);
 
 
                 } else {
@@ -903,37 +986,23 @@
 
                     data.push(selected)
                     data.map((element, key) => {
-                        console.log(element, key);
 
                         $("#table-body").append(
                             `<tr><td>${element.name}</td><td id="price-2">$${element.value}</td></tr>`
                         )
 
                     });
+
+                    $('#selectedServices').text(`${data.length} Serivces`);
                 }
-
-
-
-                // if (data) {
-                //     console.log('called');
-                //     $("#table-body").innerHTML = '';
-
-                //     data.map((element,key) => {
-                //     console.log(element,key);
-
-                //         $("#table-body").append(
-                //             `<tr><td>${element.name}</td><td id="price-2">$${element.value}</td></tr>`
-                //         )
-
-                //     });
-                // }
-
 
 
 
             })
 
-
+            if (!selected_staff) {
+                $('#preference').text(`No Preference Selected`)
+            }
 
 
 
