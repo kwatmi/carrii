@@ -1,73 +1,84 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Carrii web app</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/calendar.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=SF+Pro+Text&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=SF+UI+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Circular+Std&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
+
 <body>
-<!-- form -->
-<!-- MultiStep Form -->
-<div class="container-fluid" >
-    <div class="row justify-content-center mt-0">
-        <div class="col-12 col-sm-12 col-md-11 col-lg-11 text-center p-0 mt-3 mb-2">
-            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                <h2><strong>Book an appointment </strong></h2>
-                <p>Fill all the neccessary field </p>
-                
-                
+    <!-- form -->
+    <!-- MultiStep Form -->
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-0">
+            <div class="col-12 col-sm-12 col-md-11 col-lg-11 text-center p-0 mt-3 mb-2">
+                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                    <h2><strong>Book an appointment </strong></h2>
+                    <p>Fill all the neccessary field </p>
+
+
+                </div>
             </div>
         </div>
+
     </div>
-   
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-12 mx-0">
-            <form id="msform">
-                <!-- progressbar -->
-                <ul id="progressbar" class="mx-0 px-0">
-                    <li class="active" id="services"><strong>Services</strong></li>
-                    <li id="prefrence"><strong>Staff prefrence</strong></li>
-                    <li id="selecttime"><strong>Select time</strong></li>
-                    <li id="confirm" class="d-none d-lg-block"><strong>Confirm</strong></li> 
-                </ul> 
-                <!-- fieldsets -->
-                <!-- first form step -->
-                <fieldset>
-                    <div class="form-card pt-3">
-                        <!-- <h2 class="fs-title">Account Information</h2>  -->
-                        <!-- pills testing -->
-                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"aria-controls="pills-home" aria-selected="true">All</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"aria-controls="pills-profile" aria-selected="false">Makup</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-weave" role="tab"aria-controls="pills-contact" aria-selected="false">Weave</a>
-                            </li>
-                        </ul>
-                        <!-- first pill tab -->
-                        <div class="tab-content pt-2 pl-1" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> 
-                                <div class="row">
-                                    <div class="card-deck col-12 my-0 my-lg-4 ">
-                                        <div class="card my-3 my-lg-0 border-0 select-services-cards p-3" >
-                                            <div class="row no-gutters">
-                                                <div class="col-4 col-md-6">
-                                                    <img src="images/haircut.jpg" class="card-img media-img-fluid" alt="...">
-                                                </div>
-                                                <div class=" col-8 col-md-6 py-lg-2 px-lg-2 py-0 px-2">
-                                                    <!-- <div class="py-lg-2 px-lg-2 py-0 px-2"> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mx-0">
+                <form id="msform">
+                    <!-- progressbar -->
+                    <ul id="progressbar" class="mx-0 px-0">
+                        <li class="active" id="services"><strong>Services</strong></li>
+                        <li id="prefrence"><strong>Staff prefrence</strong></li>
+                        <li id="selecttime"><strong>Select time</strong></li>
+                        <li id="confirm" class="d-none d-lg-block"><strong>Confirm</strong></li>
+                    </ul>
+                    <!-- fieldsets -->
+                    <!-- first form step -->
+                    <fieldset>
+                        <div class="form-card pt-3">
+                            <!-- <h2 class="fs-title">Account Information</h2>  -->
+                            <!-- pills testing -->
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                        role="tab" aria-controls="pills-home" aria-selected="true">All</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                        role="tab" aria-controls="pills-profile" aria-selected="false">Makup</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-weave"
+                                        role="tab" aria-controls="pills-contact" aria-selected="false">Weave</a>
+                                </li>
+                            </ul>
+                            <!-- first pill tab -->
+                            <div class="tab-content pt-2 pl-1" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="row">
+                                        <div class="card-deck col-12 my-0 my-lg-4 ">
+                                            <div class="card my-3 my-lg-0 border-0 select-services-cards p-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-4 col-md-6">
+                                                        <img src="images/haircut.jpg" class="card-img media-img-fluid"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class=" col-8 col-md-6 py-lg-2 px-lg-2 py-0 px-2">
+                                                        <!-- <div class="py-lg-2 px-lg-2 py-0 px-2"> -->
                                                         <!-- <h5 class="card-title">Card title</h5> -->
                                                         <div class="">
                                                             <h5 class="salon-service-name">Nail Treatments </h5>
@@ -84,587 +95,621 @@
                                                                     <span class="small-txt txt-blue"> $120</span>
                                                                 </p>
                                                             </div>
-                                                            <div class="col-3 col-md-2 star-rating pl-0 round"> 
+                                                            <div class="col-3 col-md-2 star-rating pl-0 round">
                                                                 <!-- <div class="form-check"> -->
-                                                                    <input type="checkbox" id="checkbox1" class="mb-0 pb-0 sum" value="120"/>
-                                                                    <label for="checkbox"  class="d-none"></label>
+                                                                <input type="checkbox" id="checkbox1"
+                                                                    class="mb-0 pb-0 sum" value="120" />
+                                                                <label for="checkbox" class="d-none"></label>
                                                                 <!-- </div> -->
                                                             </div>
                                                         </div>
-                                                    <!-- </div> -->
+                                                        <!-- </div> -->
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="card my-3 my-lg-0 select-services-cards p-3" >
-                                            <div class="row no-gutters">
-                                                <div class="col-4 col-md-6">
-                                                    <img src="images/haircut.jpg" class="card-img media-img-fluid" alt="...">
-                                                </div>
-                                                <div class=" col-8 col-md-6">
-                                                    <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                        <!-- <h5 class="card-title">Card title</h5> -->
-                                                        <div class="">
-                                                            <h5 class="salon-service-name">Nail Treatment </h5>
-                                                            <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                        </div>
-                                                        <div class="row  pt-2">
-                                                            <div class="col-5 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt "> 1 hour</span>
-                                                                </p>
+                                            <div class="card my-3 my-lg-0 select-services-cards p-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-4 col-md-6">
+                                                        <img src="images/haircut.jpg" class="card-img media-img-fluid"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class=" col-8 col-md-6">
+                                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                                            <div class="">
+                                                                <h5 class="salon-service-name">Nail Treatment </h5>
+                                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
                                                             </div>
-                                                            <div class="col-4 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt txt-blue"> $150</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-3 col-md-2 star-rating pl-0 round"> 
-                                                                <!-- <div class="form-check"> -->
-                                                                    <input type="checkbox" id="checkbox1" class="mb-0 pb-0 sum" value="150" />
-                                                                    <label for="checkbox"  class="d-none"></label>
-                                                                <!-- </div> -->
+                                                            <div class="row  pt-2">
+                                                                <div class="col-5 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt "> 1 hour</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-4 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt txt-blue"> $150</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3 col-md-2 star-rating pl-0 round">
+                                                                    <!-- <div class="form-check"> -->
+                                                                    <input type="checkbox" id="checkbox1"
+                                                                        class="mb-0 pb-0 sum" value="150" />
+                                                                    <label for="checkbox" class="d-none"></label>
+                                                                    <!-- </div> -->
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                         <div class="card my-3 my-lg-0 select-services-cards p-3" >
-                                            <div class="row no-gutters">
-                                                <div class="col-4 col-md-6">
-                                                    <img src="images/haircut.jpg" class="card-img media-img-fluid" alt="...">
-                                                </div>
-                                                <div class=" col-8 col-md-6">
-                                                    <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                        <!-- <h5 class="card-title">Card title</h5> -->
-                                                        <div class="">
-                                                            <h5 class="salon-service-name">Hair Treatment</h5>
-                                                            <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                        </div>
-                                                        <div class="row  pt-2">
-                                                            <div class="col-5 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt "> 1 hour</span>
-                                                                </p>
+                                            <div class="card my-3 my-lg-0 select-services-cards p-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-4 col-md-6">
+                                                        <img src="images/haircut.jpg" class="card-img media-img-fluid"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class=" col-8 col-md-6">
+                                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                                            <div class="">
+                                                                <h5 class="salon-service-name">Hair Treatment</h5>
+                                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
                                                             </div>
-                                                            <div class="col-4 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt txt-blue"> $170</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-3 col-md-2 star-rating pl-0 round"> 
-                                                                <!-- <div class="form-check"> -->
-                                                                    <input type="checkbox" id="checkbox2" class="mb-0 pb-0 sum" value="170" />
-                                                                    <label for="checkbox"  class="d-none"></label>
-                                                                <!-- </div> -->
+                                                            <div class="row  pt-2">
+                                                                <div class="col-5 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt "> 1 hour</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-4 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt txt-blue"> $170</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3 col-md-2 star-rating pl-0 round">
+                                                                    <!-- <div class="form-check"> -->
+                                                                    <input type="checkbox" id="checkbox2"
+                                                                        class="mb-0 pb-0 sum" value="170" />
+                                                                    <label for="checkbox" class="d-none"></label>
+                                                                    <!-- </div> -->
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                    </div>
-                                    <div class="card-deck col-12 my-0 my-lg-4 ">
-                                        <div class="card my-3 my-lg-0 border-0 select-services-cards p-3" >
-                                            <div class="row no-gutters">
-                                                <div class="col-4 col-md-6">
-                                                    <img src="images/haircut.jpg" class="card-img media-img-fluid" alt="...">
-                                                </div>
-                                                <div class=" col-8 col-md-6">
-                                                    <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                        <!-- <h5 class="card-title">Card title</h5> -->
-                                                        <div class="">
-                                                            <h5 class="salon-service-name">Nail Treatment </h5>
-                                                            <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                        </div>
-                                                        <div class="row  pt-2">
-                                                            <div class="col-5 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt "> 1 hour</span>
-                                                                </p>
+                                        </div>
+                                        <div class="card-deck col-12 my-0 my-lg-4 ">
+                                            <div class="card my-3 my-lg-0 border-0 select-services-cards p-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-4 col-md-6">
+                                                        <img src="images/haircut.jpg" class="card-img media-img-fluid"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class=" col-8 col-md-6">
+                                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                                            <div class="">
+                                                                <h5 class="salon-service-name">Nail Treatment </h5>
+                                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
                                                             </div>
-                                                            <div class="col-4 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt txt-blue"> $180</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-3 col-md-2 star-rating pl-0 round"> 
-                                                                <!-- <div class="form-check"> -->
-                                                                    <input type="checkbox" id="checkbox1" class="mb-0 pb-0 sum" value="180" />
-                                                                    <label for="checkbox"  class="d-none"></label>
-                                                                <!-- </div> -->
+                                                            <div class="row  pt-2">
+                                                                <div class="col-5 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt "> 1 hour</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-4 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt txt-blue"> $180</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3 col-md-2 star-rating pl-0 round">
+                                                                    <!-- <div class="form-check"> -->
+                                                                    <input type="checkbox" id="checkbox1"
+                                                                        class="mb-0 pb-0 sum" value="180" />
+                                                                    <label for="checkbox" class="d-none"></label>
+                                                                    <!-- </div> -->
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="card my-3 my-lg-0 select-services-cards p-3" >
-                                            <div class="row no-gutters">
-                                                <div class="col-4 col-md-6">
-                                                    <img src="images/haircut.jpg" class="card-img media-img-fluid" alt="...">
-                                                </div>
-                                                <div class=" col-8 col-md-6">
-                                                    <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                        <!-- <h5 class="card-title">Card title</h5> -->
-                                                        <div class="">
-                                                            <h5 class="salon-service-name">Nail Treatment </h5>
-                                                            <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                        </div>
-                                                        <div class="row  pt-2">
-                                                            <div class="col-5 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt "> 1 hour</span>
-                                                                </p>
+                                            <div class="card my-3 my-lg-0 select-services-cards p-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-4 col-md-6">
+                                                        <img src="images/haircut.jpg" class="card-img media-img-fluid"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class=" col-8 col-md-6">
+                                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                                            <div class="">
+                                                                <h5 class="salon-service-name">Nail Treatment </h5>
+                                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
                                                             </div>
-                                                            <div class="col-4 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt txt-blue"> $180</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-3 col-md-2 star-rating pl-0 round"> 
-                                                                <!-- <div class="form-check"> -->
-                                                                    <input type="checkbox" id="checkbox1" class="mb-0 pb-0 sum" value="180" />
-                                                                    <label for="checkbox"  class="d-none"></label>
-                                                                <!-- </div> -->
+                                                            <div class="row  pt-2">
+                                                                <div class="col-5 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt "> 1 hour</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-4 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt txt-blue"> $180</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3 col-md-2 star-rating pl-0 round">
+                                                                    <!-- <div class="form-check"> -->
+                                                                    <input type="checkbox" id="checkbox1"
+                                                                        class="mb-0 pb-0 sum" value="180" />
+                                                                    <label for="checkbox" class="d-none"></label>
+                                                                    <!-- </div> -->
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                         <div class="card my-3 my-lg-0 select-services-cards p-3" >
-                                            <div class="row no-gutters">
-                                                <div class="col-4 col-md-6">
-                                                    <img src="images/haircut.jpg" class="card-img media-img-fluid" alt="...">
-                                                </div>
-                                                <div class=" col-8 col-md-6">
-                                                    <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                        <!-- <h5 class="card-title">Card title</h5> -->
-                                                        <div class="">
-                                                            <h5 class="salon-service-name">Hair Treatment</h5>
-                                                            <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                        </div>
-                                                        <div class="row  pt-2">
-                                                            <div class="col-5 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt "> 1 hour</span>
-                                                                </p>
+                                            <div class="card my-3 my-lg-0 select-services-cards p-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-4 col-md-6">
+                                                        <img src="images/haircut.jpg" class="card-img media-img-fluid"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class=" col-8 col-md-6">
+                                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                                            <div class="">
+                                                                <h5 class="salon-service-name">Hair Treatment</h5>
+                                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
                                                             </div>
-                                                            <div class="col-4 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt txt-blue"> $120</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-3 col-md-2 star-rating pl-0 round"> 
-                                                                <!-- <div class="form-check"> -->
-                                                                    <input type="checkbox" id="checkbox2" class="mb-0 pb-0 sum" value="120" />
-                                                                    <label for="checkbox"  class="d-none"></label>
-                                                                <!-- </div> -->
+                                                            <div class="row  pt-2">
+                                                                <div class="col-5 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt "> 1 hour</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-4 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt txt-blue"> $120</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3 col-md-2 star-rating pl-0 round">
+                                                                    <!-- <div class="form-check"> -->
+                                                                    <input type="checkbox" id="checkbox2"
+                                                                        class="mb-0 pb-0 sum" value="120" />
+                                                                    <label for="checkbox" class="d-none"></label>
+                                                                    <!-- </div> -->
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                    </div>
-                                </div>        
-                            </div>
-                            <!-- second pill tab -->
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> 
-                                <div class="row">
-                                    <div class="card-deck col-12 my-0 my-lg-4 ">
-                                        <div class="card my-3 my-lg-0 border-0 select-services-cards p-3" >
-                                            <div class="row no-gutters">
-                                                <div class="col-4 col-md-6">
-                                                    <img src="images/haircut.jpg" class="card-img media-img-fluid" alt="...">
-                                                </div>
-                                                <div class=" col-8 col-md-6">
-                                                    <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                        <!-- <h5 class="card-title">Card title</h5> -->
-                                                        <div class="">
-                                                            <h5 class="salon-service-name">Nail Treatment </h5>
-                                                            <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                        </div>
-                                                        <div class="row  pt-2">
-                                                            <div class="col-5 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt "> 1 hour</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-4 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt txt-blue"> $130</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-3 col-md-2 star-rating pl-0 round"> 
-                                                                <!-- <div class="form-check"> -->
-                                                                    <input type="checkbox" id="checkbox1" class="mb-0 pb-0 sum" value="130"/>
-                                                                    <label for="checkbox"  class="d-none"></label>
-                                                                <!-- </div> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card my-3 my-lg-0 select-services-cards p-3" >
-                                            <div class="row no-gutters">
-                                                <div class="col-4 col-md-6">
-                                                    <img src="images/haircut.jpg" class="card-img media-img-fluid" alt="...">
-                                                </div>
-                                                <div class=" col-8 col-md-6">
-                                                    <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                        <!-- <h5 class="card-title">Card title</h5> -->
-                                                        <div class="">
-                                                            <h5 class="salon-service-name">Nail Treatment </h5>
-                                                            <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                        </div>
-                                                        <div class="row  pt-2">
-                                                            <div class="col-5 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt "> 1 hour</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-4 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt txt-blue"> $200</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-3 col-md-2 star-rating pl-0 round"> 
-                                                                <!-- <div class="form-check"> -->
-                                                                    <input type="checkbox" id="checkbox1" class="mb-0 pb-0 sum" value="200" />
-                                                                    <label for="checkbox"  class="d-none"></label>
-                                                                <!-- </div> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                         <div class="card my-3 my-lg-0 select-services-cards p-3" >
-                                            <div class="row no-gutters">
-                                                <div class="col-4 col-md-6">
-                                                    <img src="images/haircut.jpg" class="card-img media-img-fluid" alt="...">
-                                                </div>
-                                                <div class=" col-8 col-md-6">
-                                                    <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                        <!-- <h5 class="card-title">Card title</h5> -->
-                                                        <div class="">
-                                                            <h5 class="salon-service-name">Hair Treatment</h5>
-                                                            <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                        </div>
-                                                        <div class="row  pt-2">
-                                                            <div class="col-5 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt "> 1 hour</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-4 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt txt-blue"> $190</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-3 col-md-2 star-rating pl-0 round"> 
-                                                                <!-- <div class="form-check"> -->
-                                                                    <input type="checkbox" id="checkbox2" class="mb-0 pb-0 sum" value="190"/>
-                                                                    <label for="checkbox"  class="d-none"></label>
-                                                                <!-- </div> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!--  pill tab -->
-                            <div class="tab-pane fade" id="pills-weave" role="tabpanel" aria-labelledby="pills-weave-tab"> 
-                                <div class="row">
-                                    <div class="card-deck col-12 my-0 my-lg-4 ">
-                                        <div class="card my-3 my-lg-0 border-0 select-services-cards p-3" >
-                                            <div class="row no-gutters">
-                                                <div class="col-4 col-md-6">
-                                                    <img src="images/haircut.jpg" class="card-img media-img-fluid" alt="...">
-                                                </div>
-                                                <div class=" col-8 col-md-6">
-                                                    <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                        <!-- <h5 class="card-title">Card title</h5> -->
-                                                        <div class="">
-                                                            <h5 class="salon-service-name">Nail Treatment </h5>
-                                                            <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                        </div>
-                                                        <div class="row  pt-2">
-                                                            <div class="col-5 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt "> 1 hour</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-4 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt txt-blue"> $90</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-3 col-md-2 star-rating pl-0 round"> 
-                                                                <!-- <div class="form-check"> -->
-                                                                    <input type="checkbox" id="checkbox1" class="mb-0 pb-0 sum" value="90" />
-                                                                    <label for="checkbox"  class="d-none"></label>
-                                                                <!-- </div> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card my-3 my-lg-0 select-services-cards p-3" >
-                                            <div class="row no-gutters">
-                                                <div class="col-4 col-md-6">
-                                                    <img src="images/haircut.jpg" class="card-img media-img-fluid" alt="...">
-                                                </div>
-                                                <div class=" col-8 col-md-6">
-                                                    <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                        <!-- <h5 class="card-title">Card title</h5> -->
-                                                        <div class="">
-                                                            <h5 class="salon-service-name">Nail Treatment </h5>
-                                                            <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                        </div>
-                                                        <div class="row  pt-2">
-                                                            <div class="col-5 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt "> 1 hour</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-4 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt txt-blue"> $110</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-3 col-md-2 star-rating pl-0 round"> 
-                                                                <!-- <div class="form-check"> -->
-                                                                    <input type="checkbox" id="checkbox1" class="mb-0 pb-0 sum" value="110" />
-                                                                    <label for="checkbox"  class="d-none"></label>
-                                                                <!-- </div> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                         <div class="card my-3 my-lg-0 select-services-cards p-3" >
-                                            <div class="row no-gutters">
-                                                <div class="col-4 col-md-6">
-                                                    <img src="images/haircut.jpg" class="card-img media-img-fluid" alt="...">
-                                                </div>
-                                                <div class=" col-8 col-md-6">
-                                                    <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                        <!-- <h5 class="card-title">Card title</h5> -->
-                                                        <div class="">
-                                                            <h5 class="salon-service-name">Hair Treatment</h5>
-                                                            <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                        </div>
-                                                        <div class="row  pt-2">
-                                                            <div class="col-5 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt "> 1 hour</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-4 col-md-5">
-                                                                <p class="mb-0">
-                                                                    <span class="small-txt txt-blue"> $115</span>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-3 col-md-2 star-rating pl-0 round"> 
-                                                                <!-- <div class="form-check"> -->
-                                                                    <input type="checkbox" id="checkbox2" class="mb-0 pb-0 sum" value="115" />
-                                                                    <label for="checkbox"  class="d-none"></label>
-                                                                <!-- </div> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- second pill tab -->
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="row">
+                                        <div class="card-deck col-12 my-0 my-lg-4 ">
+                                            <div class="card my-3 my-lg-0 border-0 select-services-cards p-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-4 col-md-6">
+                                                        <img src="images/haircut.jpg" class="card-img media-img-fluid"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class=" col-8 col-md-6">
+                                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                                            <div class="">
+                                                                <h5 class="salon-service-name">Nail Treatment </h5>
+                                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
+                                                            </div>
+                                                            <div class="row  pt-2">
+                                                                <div class="col-5 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt "> 1 hour</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-4 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt txt-blue"> $130</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3 col-md-2 star-rating pl-0 round">
+                                                                    <!-- <div class="form-check"> -->
+                                                                    <input type="checkbox" id="checkbox1"
+                                                                        class="mb-0 pb-0 sum" value="130" />
+                                                                    <label for="checkbox" class="d-none"></label>
+                                                                    <!-- </div> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card my-3 my-lg-0 select-services-cards p-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-4 col-md-6">
+                                                        <img src="images/haircut.jpg" class="card-img media-img-fluid"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class=" col-8 col-md-6">
+                                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                                            <div class="">
+                                                                <h5 class="salon-service-name">Nail Treatment </h5>
+                                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
+                                                            </div>
+                                                            <div class="row  pt-2">
+                                                                <div class="col-5 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt "> 1 hour</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-4 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt txt-blue"> $200</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3 col-md-2 star-rating pl-0 round">
+                                                                    <!-- <div class="form-check"> -->
+                                                                    <input type="checkbox" id="checkbox1"
+                                                                        class="mb-0 pb-0 sum" value="200" />
+                                                                    <label for="checkbox" class="d-none"></label>
+                                                                    <!-- </div> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card my-3 my-lg-0 select-services-cards p-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-4 col-md-6">
+                                                        <img src="images/haircut.jpg" class="card-img media-img-fluid"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class=" col-8 col-md-6">
+                                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                                            <div class="">
+                                                                <h5 class="salon-service-name">Hair Treatment</h5>
+                                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
+                                                            </div>
+                                                            <div class="row  pt-2">
+                                                                <div class="col-5 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt "> 1 hour</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-4 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt txt-blue"> $190</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3 col-md-2 star-rating pl-0 round">
+                                                                    <!-- <div class="form-check"> -->
+                                                                    <input type="checkbox" id="checkbox2"
+                                                                        class="mb-0 pb-0 sum" value="190" />
+                                                                    <label for="checkbox" class="d-none"></label>
+                                                                    <!-- </div> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  pill tab -->
+                                <div class="tab-pane fade" id="pills-weave" role="tabpanel"
+                                    aria-labelledby="pills-weave-tab">
+                                    <div class="row">
+                                        <div class="card-deck col-12 my-0 my-lg-4 ">
+                                            <div class="card my-3 my-lg-0 border-0 select-services-cards p-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-4 col-md-6">
+                                                        <img src="images/haircut.jpg" class="card-img media-img-fluid"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class=" col-8 col-md-6">
+                                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                                            <div class="">
+                                                                <h5 class="salon-service-name">Nail Treatment </h5>
+                                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
+                                                            </div>
+                                                            <div class="row  pt-2">
+                                                                <div class="col-5 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt "> 1 hour</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-4 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt txt-blue"> $90</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3 col-md-2 star-rating pl-0 round">
+                                                                    <!-- <div class="form-check"> -->
+                                                                    <input type="checkbox" id="checkbox1"
+                                                                        class="mb-0 pb-0 sum" value="90" />
+                                                                    <label for="checkbox" class="d-none"></label>
+                                                                    <!-- </div> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card my-3 my-lg-0 select-services-cards p-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-4 col-md-6">
+                                                        <img src="images/haircut.jpg" class="card-img media-img-fluid"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class=" col-8 col-md-6">
+                                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                                            <div class="">
+                                                                <h5 class="salon-service-name">Nail Treatment </h5>
+                                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
+                                                            </div>
+                                                            <div class="row  pt-2">
+                                                                <div class="col-5 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt "> 1 hour</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-4 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt txt-blue"> $110</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3 col-md-2 star-rating pl-0 round">
+                                                                    <!-- <div class="form-check"> -->
+                                                                    <input type="checkbox" id="checkbox1"
+                                                                        class="mb-0 pb-0 sum" value="110" />
+                                                                    <label for="checkbox" class="d-none"></label>
+                                                                    <!-- </div> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card my-3 my-lg-0 select-services-cards p-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-4 col-md-6">
+                                                        <img src="images/haircut.jpg" class="card-img media-img-fluid"
+                                                            alt="...">
+                                                    </div>
+                                                    <div class=" col-8 col-md-6">
+                                                        <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                                            <div class="">
+                                                                <h5 class="salon-service-name">Hair Treatment</h5>
+                                                                <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
+                                                            </div>
+                                                            <div class="row  pt-2">
+                                                                <div class="col-5 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt "> 1 hour</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-4 col-md-5">
+                                                                    <p class="mb-0">
+                                                                        <span class="small-txt txt-blue"> $115</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-3 col-md-2 star-rating pl-0 round">
+                                                                    <!-- <div class="form-check"> -->
+                                                                    <input type="checkbox" id="checkbox2"
+                                                                        class="mb-0 pb-0 sum" value="115" />
+                                                                    <label for="checkbox" class="d-none"></label>
+                                                                    <!-- </div> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <h3><strong>Total:</strong> $<span id="payment-total">0</span></h3>
+
+                                </div>
+
                             </div>
                         </div>
-                        <div class="container">
-                            <div class="row">
-                               <h3><strong>Total:</strong> $<span id="payment-total" >0</span></h3>
+                        <!-- <input type="text" id="total" class="disabled"> -->
 
-                            </div>
+                        <input type="button" name="next" class="next hero-butoon action-button  mt-3  py-2 px-4"
+                            value="Book Now" />
+                    </fieldset>
 
-                        </div>
-                    </div>
-                    <!-- <input type="text" id="total" class="disabled"> -->
-                    
-                    <input type="button" name="next" class="next hero-butoon action-button  mt-3  py-2 px-4" value="Book Now" />
-                </fieldset>
+                    <!-- second form step -->
+                    <fieldset>
+                        <div class="container-fluid">
+                            <div class="row text-left">
+                                <!--  -->
+                                <div class="card-deck col-12 my-0 my-lg-4 ">
+                                    <div class="card my-3 my-lg-0 border-0 no-prefrence-cards "
+                                        onclick="location.href = 'bookingtime.html'">
+                                        <div class="row no-gutters my-auto py-4">
+                                            <div class=" col-5 col-md-6 py-lg-2 px-lg-2 py-0 px-2">
+                                                <div class="no-prefrence-img">
+                                                    <!-- <h5 class="card-title">Card title</h5> -->
 
-                <!-- second form step -->
-                <fieldset>
-                    <div class="container-fluid">
-                        <div class="row text-left" >
-                            <!--  -->
-                            <div class="card-deck col-12 my-0 my-lg-4 ">
-                                <div class="card my-3 my-lg-0 border-0 no-prefrence-cards " onclick="location.href = 'bookingtime.html'" >
-                                    <div class="row no-gutters my-auto py-4">
-                                        <div class=" col-5 col-md-6 py-lg-2 px-lg-2 py-0 px-2">
-                                            <div class="no-prefrence-img">
-                                                <!-- <h5 class="card-title">Card title</h5> -->
-                                            
                                                     <img src="images/no-preference.svg" alt="">
-                                    
-                                            </div>
-                                        </div>
-                                        <div class="col-7 col-md-6">
-                                            <h3 class="text-white"> No preference</h3>
-                                            <p>
-                                            <span class="text-white"> Select any availabe staff</span>
-                                                 <img src="images/arrow.svg" ></p>
-                                            
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card my-3 my-lg-0 border-0 select-services-cards " onclick="location.href = 'bookingtime.html'" >
-                                    <div class="row no-gutters">
-                                        <div class=" col-5 col-md-6">
-                                            <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                <!-- <h5 class="card-title">Card title</h5> -->
-                                                <div class="p-lg-3">
-                                                    <h3 class="salon-service-name">Emma <br>
-                                                        Isabella.</h3>
-                                                    <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                    <p class="mt-lg-3"><small class=""> makeup artise</small></p>
+
                                                 </div>
                                             </div>
+                                            <div class="col-7 col-md-6">
+                                                <h3 class="text-white"> No preference</h3>
+                                                <p>
+                                                    <span class="text-white"> Select any availabe staff</span>
+                                                    <img src="images/arrow.svg"></p>
+
+
+                                            </div>
                                         </div>
-                                        <div class="col-7 col-md-6">
-                                            <img src="images/staff2.jpg" class="card-img media-img-fluid" alt="...">
+                                    </div>
+                                    <div class="card my-3 my-lg-0 border-0 select-services-cards "
+                                        onclick="location.href = 'bookingtime.html'">
+                                        <div class="row no-gutters">
+                                            <div class=" col-5 col-md-6">
+                                                <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                    <!-- <h5 class="card-title">Card title</h5> -->
+                                                    <div class="p-lg-3">
+                                                        <h3 class="salon-service-name">Emma <br>
+                                                            Isabella.</h3>
+                                                        <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
+                                                        <p class="mt-lg-3"><small class=""> makeup artise</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-7 col-md-6">
+                                                <img src="images/staff2.jpg" class="card-img media-img-fluid" alt="...">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!--  -->
+                                <div class="card-deck col-12 my-0 my-lg-4 ">
+                                    <div class="card my-3 my-lg-0 border-0 select-services-cards "
+                                        onclick="location.href = 'bookingtime.html'">
+                                        <div class="row no-gutters">
+                                            <div class=" col-5 col-md-6">
+                                                <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                    <!-- <h5 class="card-title">Card title</h5> -->
+                                                    <div class="p-lg-3">
+                                                        <h3 class="salon-service-name">Emma <br>
+                                                            Isabella.</h3>
+                                                        <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
+                                                        <p class="mt-lg-3"><small class=""> makeup artise</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-7 col-md-6">
+                                                <img src="images/staff2.jpg" class="card-img media-img-fluid" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card my-3 my-lg-0 select-services-cards next"
+                                        onclick="location.href = 'bookingtime.html'">
+                                        <div class="row no-gutters">
+                                            <div class=" col-5 col-md-6">
+                                                <div class="py-lg-2 px-lg-2 py-0 px-2">
+                                                    <!-- <h5 class="card-title">Card title</h5> -->
+                                                    <div class="p-lg-3">
+                                                        <h3 class="salon-service-name">Emma <br>
+                                                            Isabella.</h3>
+                                                        <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
+                                                        <p class="mt-lg-3"><small class=""> makeup artise</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-7 col-md-6">
+                                                <img src="images/staff2.jpg" class="card-img media-img-fluid" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-
-                            <!--  -->
-                            <div class="card-deck col-12 my-0 my-lg-4 ">
-                                <div class="card my-3 my-lg-0 border-0 select-services-cards " onclick="location.href = 'bookingtime.html'" >
-                                    <div class="row no-gutters">
-                                        <div class=" col-5 col-md-6">
-                                            <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                <!-- <h5 class="card-title">Card title</h5> -->
-                                                <div class="p-lg-3">
-                                                    <h3 class="salon-service-name">Emma <br>
-                                                        Isabella.</h3>
-                                                    <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                    <p class="mt-lg-3"><small class=""> makeup artise</small></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-7 col-md-6">
-                                            <img src="images/staff2.jpg" class="card-img media-img-fluid" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                 <div class="card my-3 my-lg-0 select-services-cards next"  onclick="location.href = 'bookingtime.html'">
-                                    <div class="row no-gutters">
-                                        <div class=" col-5 col-md-6">
-                                            <div class="py-lg-2 px-lg-2 py-0 px-2">
-                                                <!-- <h5 class="card-title">Card title</h5> -->
-                                                <div class="p-lg-3">
-                                                    <h3 class="salon-service-name">Emma <br>
-                                                        Isabella.</h3>
-                                                    <!-- <p class="card-text fourteen-px-text">Beauty salon Schererville...</p> -->
-                                                    <p class="mt-lg-3"><small class=""> makeup artise</small></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-7 col-md-6">
-                                            <img src="images/staff2.jpg" class="card-img media-img-fluid" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                    </div> 
-                    <!-- <input type="button" name="" class="previous action-button-previous" value="Previous" />  -->
-                    <input type="button" name="previous" class="previous-btn previous     hero-butoon action-button  mt-3  py-2 px-4" value="Previous" />
-                    <!-- <input type="button" name="next" class="next action-button" value="Next Step" /> -->
-                    <input type="button" name="next" class=" hero-butoon action-button  mt-3  py-2 px-4" value="Book Now"  onclick="location.href = 'bookingtime.html'"/>
-                </fieldset>
-               
-            </form>
-        </div>
+                        <!-- <input type="button" name="" class="previous action-button-previous" value="Previous" />  -->
+                        <input type="button" name="previous"
+                            class="previous-btn previous     hero-butoon action-button  mt-3  py-2 px-4"
+                            value="Previous" />
+                        <!-- <input type="button" name="next" class="next action-button" value="Next Step" /> -->
+                        <input type="button" name="next" class=" hero-butoon action-button  mt-3  py-2 px-4"
+                            value="Book Now" onclick="location.href = 'bookingtime.html'" />
+                    </fieldset>
 
-
-
-        <!-- modal -->
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header border-0">
-                  <h5 class="modal-title" id="exampleModalLabel"><small>select time</small></h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                    <div class="card my-3 my-lg-0 border-0 no-prefrence-cards " >
-                        <div class="row no-gutters my-auto py-4">
-                            
-                            <div class="col-12 col-md-12 text-center">
-                                <p>
-                                    <span class="text-white"> MON</span>
-                                         </p>
-                                <h3 class="text-white"> 18th</h3>
-                                <p>
-                                <span class="text-white"> MAY</span>
-                                     </p>
-                                
-                                
-                            </div >
-                            
-                           
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12">
-                        
-                         <h5  class="border-bottom py-3  " >
-                             10:15am 
-                          </h5 >
-                          <h5  class="border-bottom py-3">
-                             11:00am 
-                          </h5 >
-                          <h5  class="border-bottom py-3">
-                            12:00pm 
-                         </h5 >
-                         <h5 class="border-bottom py-3">
-                            1:00pm 
-                         </h5 >
-                         <h5 class="border-bottom py-3">
-                            2:15pm 
-                         </h5 >
-
-                    </div>
-                </div>
-               
-              </div>
+                </form>
             </div>
-          </div>
+
+
+
+            <!-- modal -->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title" id="exampleModalLabel"><small>select time</small></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card my-3 my-lg-0 border-0 no-prefrence-cards ">
+                                <div class="row no-gutters my-auto py-4">
+
+                                    <div class="col-12 col-md-12 text-center">
+                                        <p>
+                                            <span class="text-white"> MON</span>
+                                        </p>
+                                        <h3 class="text-white"> 18th</h3>
+                                        <p>
+                                            <span class="text-white"> MAY</span>
+                                        </p>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12">
+
+                                <h5 class="border-bottom py-3  ">
+                                    10:15am
+                                </h5>
+                                <h5 class="border-bottom py-3">
+                                    11:00am
+                                </h5>
+                                <h5 class="border-bottom py-3">
+                                    12:00pm
+                                </h5>
+                                <h5 class="border-bottom py-3">
+                                    1:00pm
+                                </h5>
+                                <h5 class="border-bottom py-3">
+                                    2:15pm
+                                </h5>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
 
 
-<!-- end of form -->
+    <!-- end of form -->
 
 
 
@@ -674,7 +719,7 @@
     <section class="getapp-section">
         <div class="container-fluid mt-3 mt-lg-5  ">
             <div class="row">
-                <div class="col-md-12 py-3"> 
+                <div class="col-md-12 py-3">
                     <p class="mb-0 text-right "> © 2020. CARRII.</p>
                 </div>
             </div>
@@ -684,60 +729,54 @@
 
 
 
-<script  src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
 
-<script  src="js/main.js"></script>
-<script src="js/script.js"></script>
-<script src="js/calendar.js"></script>
-<script src="js/events.js"></script>
-
-
-<script>
-    // $('#exampleModal').modal('hide');
-    $(".cld-day").click(function(){
-
-        $('#exampleModal').modal('show')
-
-     });
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/events.js"></script>
 
 
-     $(".cld-number").click(function(){
+    <script>
+        // $('#exampleModal').modal('hide');
+        $(".cld-day").click(function () {
 
-$('#exampleModal').modal('show')
+            $('#exampleModal').modal('show')
 
-});
+        });
 
 
+        $(".cld-number").click(function () {
 
-    
-</script>
+            $('#exampleModal').modal('show')
 
-<script>
-$(".cld-number").click(function(){
+        });
+    </script>
 
-$('#exampleModal').modal('show')
+    <script>
+        $(".cld-number").click(function () {
 
-});
+            $('#exampleModal').modal('show')
 
-</script>
+        });
+    </script>
 
-<script>
+    <script>
+        $(".prevMonth").click(function () {
 
-$(".prevMonth").click(function(){
+            $('#exampleModal').modal('show')
 
-$('#exampleModal').modal('show')
+        });
+    </script>
 
-});
-</script>
+    <script>
+        $(".currMonth").click(function () {
 
-<script>
+            $('#exampleModal').modal('show')
 
-    $(".currMonth").click(function(){
-    
-    $('#exampleModal').modal('show')
-    
-    });
+        });
     </script>
 
 </body>
+
 </html>
