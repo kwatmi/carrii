@@ -107,16 +107,19 @@ $(document).ready(function () {
 window.onload = function () {
   var inputs = document.getElementsByClassName("sum"),
     total = document.getElementById("payment-total");
+  total2 = document.getElementById("payment-total-init");
 
   var totalArr = [];
 
   for (var i = 0; i < inputs.length; i++) {
     inputs[i].onchange = function () {
+      console.log(inputs[1]);
       var add = this.value * (this.checked ? 1 : -1);
       total.innerHTML = parseFloat(total.innerHTML) + add;
+      total2.innerHTML = parseFloat(total2.innerHTML) + add;
       totalArr.push(add);
 
-      console.log(total);
+      // console.log(total);
     };
   }
 };
