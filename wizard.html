@@ -834,7 +834,7 @@
                                                 d="M7.00042 2.83015V6.25872L9.28613 7.40158M12.7147 6.25872C12.7147 9.41463 10.1563 11.973 7.00042 11.973C3.84451 11.973 1.28613 9.41463 1.28613 6.25872C1.28613 3.10281 3.84451 0.544434 7.00042 0.544434C10.1563 0.544434 12.7147 3.10281 12.7147 6.25872Z"
                                                 stroke="#E7F1FF" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
-                                    </i> DATE AND TIME <span>May 13, 2016 5:08 PM </span></p>
+                                    </i> DATE AND TIME <span id="date_time">  </span></p>
                             </div>
 
                             <p class="desc-count mx-5" id="selectedServices"> </p>
@@ -895,7 +895,7 @@
                                     <p>
                                         <span class="text-white"> MON</span>
                                     </p>
-                                    <h3 class="text-white"> 18th</h3>
+                                    <h3 class="text-white" id="date"> 18th</h3>
                                     <p>
                                         <span class="text-white"> MAY</span>
                                     </p>
@@ -943,6 +943,58 @@
     <script src="js/calendar.js"></script>
     <script src="js/events.js"></script>
 
+
+    <script>
+        // $('#exampleModal').modal('hide');
+        $(".cld-day").click(function () {
+
+            $('#exampleModal').modal('show')
+
+        });
+
+
+        $(".cld-number").click(function () {
+
+            $('#exampleModal').modal('show')
+
+        });
+    </script>
+
+    <script>
+        $(".cld-number").click(function () {
+
+            $('#exampleModal').modal('show')
+
+        });
+    </script>
+
+    <script>
+        $(".prevMonth").click(function () {
+
+            $('#exampleModal').modal('show')
+
+        });
+    </script>
+
+    <script>
+        $(".currMonth").click(function () {
+
+            $('#exampleModal').modal('show')
+
+        });
+    </script>
+
+
+    <script>
+        $(".avaialbletime").on('click', function () {
+            console.log($('#date').text())
+            console.log($(this).text())
+            alert('Added');
+            $('#exampleModal').modal('hide')
+            $('#date_time').append(`${$('#date').text()},${$(this).text()}`)
+
+        });
+    </script>
 
     <script>
         $(document).ready(function () {
