@@ -989,8 +989,10 @@
         $(".avaialbletime").on('click', function () {
             console.log($('#date').text())
             console.log($(this).text())
-            alert('Added');
+            $(this).toggleClass('active-selected');
             $('#exampleModal').modal('hide')
+            $('#date_time').text('')
+
             $('#date_time').append(`${$('#date').text()},${$(this).text()}`)
 
         });
